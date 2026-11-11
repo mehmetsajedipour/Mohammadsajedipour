@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Sajedipour | Academic & Research Portfolio</title>
+    <meta name="description" content="Research Portfolio of Mohammad Sajedipour - Biomedical Engineering, AI, Edge IoMT, and Signal Processing.">
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #0ea5e9;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Header Profile */
+        .profile-header {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .profile-header h1 { font-size: 2.2rem; color: var(--primary); font-weight: 700; margin-bottom: 8px; }
+        .profile-header h2 { font-size: 1.15rem; color: var(--text-muted); font-weight: 500; margin-bottom: 12px; }
+        .affiliation { font-size: 0.95rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+        
+        /* Badges & Links */
+        .social-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f1f5f9;
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+        .btn-link:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+        .btn-link.primary { background: var(--primary); color: #fff; }
+        
+        /* Sections */
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+        }
+        .section-title {
+            font-size: 1.35rem;
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Publications & Projects Cards */
+        .item-card {
+            border-left: 3px solid var(--primary-light);
+            padding: 12px 18px;
+            background: #f8fafc;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 15px;
+        }
+        .item-title { font-size: 1.05rem; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+        .item-meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px; }
+        .item-desc { font-size: 0.92rem; color: #334155; }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #e0f2fe;
+            color: #0369a1;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .badge-success { background: #dcfce7; color: #15803d; }
+        
+        /* Membership List */
+        .membership-list { list-style: none; }
+        .membership-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        .membership-list li:last-child { border-bottom: none; }
+        .member-id { font-family: monospace; background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; }
+
+        footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; padding: 20px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header Section -->
+    <header class="profile-header">
+        <h1>Mohammad Sajedipour</h1>
+        <h2>Biomedical Engineering & Applied AI Researcher</h2>
+        <div class="affiliation">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Department of Biomedical Engineering, Kazerun Branch, Islamic Azad University, Iran</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 820px;">
+            M.Sc. in Biomedical Engineering specializing in machine learning, physiological signal/image processing, and ultra-lightweight deep learning architectures (TinyML) tailored for resource-constrained edge Internet of Medical Things (IoMT) hardware.
+        </p>
+
+        <div class="social-links">
+            <a href="mailto:mehmetsajedipour@gmail.com" class="btn-link primary"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://orcid.org/YOUR-ORCID-ID" target="_blank" class="btn-link"><i class="fa-brands fa-orcid" style="color: #a6ce39;"></i> ORCID Profile</a>
+            <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" class="btn-link"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i> LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- Research & Publications -->
+    <section class="section">
+        <h3 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Research & Publications</h3>
+        
+        <div class="item-card">
+            <span class="badge badge-success">Under Review</span>
+            <span class="badge">TinyML / IoMT</span>
+            <div class="item-title" style="margin-top: 6px;">
+                A Lightweight Residual 1D-CNN Architecture for Real-Time Cardiac Arrhythmia Classification on Resource-Constrained IoMT Edge Devices
+            </div>
+            <div class="item-meta">
+                <strong>Mohammad Sajedipour</strong>, Zahra Hekmati, Neda Daniaripour — <em>Journal of Biomedical Physics and Engineering (JBPE)</em>
+            </div>
+            <p class="item-desc">
+                Engineered an ultra-compact 1D residual network (5,621 parameters, 28.15 KB INT8 footprint) operating on single-lead ambulatory ECGs. Achieved 88.20% accuracy and 62.50% ventricular sensitivity across 27,130 unseen patient heartbeats under the strict ANSI/AAMI EC57 protocol with 45 µs execution latency.
+            </p>
+        </div>
+
+        <div class="item-card" style="border-left-color: #94a3b8;">
+            <span class="badge">In Progress</span>
+            <span class="badge">Medical Imaging</span>
+            <div class="item-title" style="margin-top: 6px;">
+                Explainable Vision Transformers for Multi-Class Brain Tumor Detection in MRI: A Clinically Interpretable Framework
+            </div>
+            <div class="item-meta">
+                <strong>Mohammad Sajedipour</strong>, et al.
+            </div>
+            <p class="item-desc">
+                Designing clinically interpretable Vision Transformers (ViT) integrated with Gradient-weighted Class Activation Mapping (Grad-CAM) for multi-class neuropathological localization in cerebral magnetic resonance imaging.
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Memberships -->
+    <section class="section">
+        <h3 class="section-title"><i class="fa-solid fa-id-card"></i> Professional Memberships & Affiliations</h3>
+        <ul class="membership-list">
+            <li>
+                <div>
+                    <strong>IEEE (Institute of Electrical and Electronics Engineers)</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">
+                        • IoT Technical Community | • Sensors Council | • Systems Council | • TCSE | • TCLT
+                    </div>
+                </div>
+                <span class="member-id">Member ID: 102918689</span>
+            </li>
+            <li>
+                <div>
+                    <strong>IAENG (International Association of Engineers)</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">
+                        • Society of Biomedical Engineering (ISBME) | • Society of Artificial Intelligence (ISAI)
+                    </div>
+                </div>
+                <span class="member-id">Member No: 589219</span>
+            </li>
+            <li>
+                <div>
+                    <strong>Internet Society (ISOC)</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">
+                        • Global Chapter & Artificial Intelligence Special Interest Group (AI SIG)
+                    </div>
+                </div>
+                <span class="member-id">Individual Member</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Applied Projects -->
+    <section class="section">
+        <h3 class="section-title"><i class="fa-solid fa-microchip"></i> Applied & Industrial R&D Projects</h3>
+        
+        <div class="item-card">
+            <div class="item-title">Edge IoMT Physiological Signal Processing Engine</div>
+            <p class="item-desc">
+                Development of end-to-end signal conditioning, baseline wander filtering, and edge-quantized classification engines targeting low-power microcontrollers (ARM Cortex-M / ESP32) for uninterrupted cardiovascular telemetry.
+            </p>
+        </div>
+
+        <div class="item-card">
+            <div class="item-title">Machine Learning & Deep Learning Medical Diagnostics</div>
+            <p class="item-desc">
+                Execution of multiple applied neural architectures for diagnostic decision support, pattern recognition, and predictive biomedical modeling with high emphasis on explainability and clinical safety.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mohammad Sajedipour. Hosted on GitHub Pages.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
